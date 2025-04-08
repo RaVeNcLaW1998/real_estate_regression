@@ -1,0 +1,4 @@
+[tool.poetry]
+name = "real_estate"
+version = "0.1.0"
+description = "Predicting real estate prices"

@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+
+# Logs
+*.log
+*.log.*
+logs/
+real_estate/logs/
+
+# Data files
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.hdf5
+*.db
+*.sqlite
+*.sav
+*.pkl
+
+# Raw and processed data
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model binaries
+*.joblib
+*.pkl
+*.h5
+models/
+
+# Streamlit cache
+.streamlit/
