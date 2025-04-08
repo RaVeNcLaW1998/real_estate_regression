@@ -10,26 +10,7 @@ venv/
 # Logs
 *.log
 *.log.*
-logs/
-real_estate/logs/
 
-# Data files
-*.csv
-*.tsv
-*.xlsx
-*.xls
-*.parquet
-*.hdf5
-*.db
-*.sqlite
-*.sav
-*.pkl
-
-# Raw and processed data
-data/raw/
-data/interim/
-data/processed/
-data/external/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
@@ -45,7 +26,6 @@ Thumbs.db
 *.joblib
 *.pkl
 *.h5
-models/
 
 # Streamlit cache
 .streamlit/
