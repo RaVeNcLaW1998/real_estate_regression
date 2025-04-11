@@ -1,54 +1,122 @@
 
-# Real Estate Price Prediction Project
+# 🏠 Real Estate Price Prediction App
 
-This project builds a linear regression model to predict real estate prices based on property features.
+This project is a Machine Learning web application that predicts **real estate property prices** based on input features such as property size, number of bedrooms, and more.
 
-## 📁 Project Structure
+The app is powered by **Streamlit** and trained using **Linear Regression** from scikit-learn.
+
+---
+
+## 🚀 Live Demo
+
+🔗 [Click here to open the app on Streamlit Cloud](https://realestateregression-ak.streamlit.app)
+---
+
+## 📂 Project Structure
 
 ```
+real_estate_project/
+├── app.py                      <- Streamlit web application
+├── requirements.txt            <- Python dependencies
+├── .gitignore                  <- Git ignore rules
+├── README.md                   <- You're reading it!
+│
 ├── data/
-│   └── raw/                  <- Place your original `final.csv` file here
+│   └── raw/
+│       └── final.csv           <- Your dataset (NOT pushed to GitHub)
+│
 ├── real_estate/
-│   ├── modeling/
-│   │   ├── train.py          <- Main training pipeline with logging and error handling
+│   ├── __init__.py
+│   ├── config.py
+│   ├── dataset.py
+│   ├── features.py
+│   ├── plots.py
+│   └── modeling/
+│       ├── train.py            <- Core training logic with logging & error handling
+│       ├── predict.py
+│       └── __init__.py
+│
+├── reports/
+│   └── figures/                <- Future visualizations
+│
 ├── tests/
-│   └── test_train.py         <- Unit tests for data loading and feature splitting
+│   └── test_train.py           <- Unit tests using pytest
+│
+└── real_estate/logs/
+    └── train.log               <- Model training log file
 ```
 
-## ▶️ How to Run
+---
 
-1. Install dependencies:
+## ✅ Features
 
-```
+- 🧠 Linear Regression Model (scikit-learn)
+- 📈 Model Evaluation (MAE, R²)
+- 📊 Streamlit Web Interface
+- ✅ Logging & Error Handling
+- 🧪 Unit Tests with Pytest
+- 📁 Production-grade Folder Structure
+
+---
+
+## ▶️ How to Run Locally
+
+### 1. Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-2. Place your `final.csv` file in `data/raw/`.
+### 2. Place your dataset
 
-3. Run the training script:
+Place `final.csv` in:
 
 ```
+data/raw/final.csv
+```
+
+### 3. Train the model
+
+```bash
 python real_estate/modeling/train.py
 ```
 
-4. Run tests:
+### 4. Run the web app
 
+```bash
+streamlit run app.py
 ```
+
+---
+
+## 🧪 Run Tests
+
+```bash
 pytest tests/
 ```
 
-## 🛠 Dependencies
+---
 
-- pandas
-- numpy
-- scikit-learn
-- matplotlib
-- pytest
+## 💾 Logging
 
-## 📄 Logs
+All logs are saved in:
 
-Logs are stored in `real_estate/logs/train.log`.
+```
+real_estate/logs/train.log
+```
+
+---
+
+## ☁️ Deploying on Streamlit Cloud
+
+1. Push your code to a **public GitHub repository**
+2. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
+3. Click **“New App”** and connect your repo
+4. Set `app.py` as the entry point
+5. Add your `requirements.txt`
+6. Click **Deploy**
+---
 
 ## 🔒 License
 
-MIT License
+This project is licensed under the MIT License.
